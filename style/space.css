@@ -1,62 +1,200 @@
-/*Импорт стилей, шрифтов и иконок*/
-/*Сброс CSS*/
-@import url ("https://marksheet.io/css/reset.css")
+/* Импорт стилей, шрифтов и иконок */
+/* Сброс CSS */
+@import url("https://marksheet.io/css/reset.css");
 
-/*Базовые стили*/
-    html{
-        height: 100%
+
+
+/* Базовые стили */
+html {
+    height: 100%;
 }
-body{
+body {
     display: flex;
     flex-direction: column;
-    height: 100%
+    height: 100%;
 }
-.container{
-    width: 100%
-    max-width: 1024px;
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /*максимальная ширина может иметь другое значение*/
+    padding: 0 15px;
     margin: 0 auto;
 }
-/*Предустановки*/
-.row{
+
+
+/* Предустановки */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    display: flex;
     flex-direction: column;
 }
-.column{
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;/* Импорт стилей, шрифтов и иконок */
+/* Сброс CSS */
+@import url("https://marksheet.io/css/reset.css");
+
+
+
+/* Базовые стили */
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /*максимальная ширина может иметь другое значение*/
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+/* Предустановки */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    display: flex;
     flex-direction: column;
 }
-nav ul{
+.nav {
+    display: flex;
+    margin-bottom: 95px;
+}
+nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-/*Гибкая верстка*/
-img{
-    width: 100%
-    max-width: 100%
+
+
+/* Гибкая верстка */
+img {
+    width: 100%;
+    max-width: 100%;
 }
-.col-1{
+.col-1 {
     flex: 1;
 }
-.col-2{
+.col-2 {
     flex: 2;
 }
-.col-3{
+.col-3 {
     flex: 3;
 }
-.col-4{
+.col-4 {
     flex: 4;
 }
-.col-5{
+.col-5 {
     flex: 5;
 }
-.col-6{
+.col-6 {
     flex: 6;
 }
 @media (max-width: 800px) {
-    .container{
+    .container {
         flex-direction: column;
-    }
+   }
 }
-/*Шапка сайта*/
-header{
+
+
+/* Шапка сайта */
+header {
+    flex: 0 0 auto;
+}
+.contacts-menu .icon-mail {
+    background-image: url(spacex/images/mail-icon.png);
+    background-position: right right;
+}
+.contacts-menu .icon-phone {
+    background-image: url(spacex/images/phone-icon.png);
+    background-position: right right;
+}
+
+/* Основное содержимое */
+main {
+    display: flex;
+    flex: 1 0 auto;
+}
+main > div.container {
+    flex: 1 0 auto;
+}
+section {
+
+}
+aside {
+
+}
+
+
+/* Подвал сайта */
+footer {
+    flex: 0 0 auto;
+}
+
+}
+
+
+/* Гибкая верстка */
+img {
+    width: 100%;
+    max-width: 100%;
+}
+.col-1 {
+    flex: 1;
+}
+.col-2 {
+    flex: 2;
+}
+.col-3 {
+    flex: 3;
+}
+.col-4 {
+    flex: 4;
+}
+.col-5 {
+    flex: 5;
+}
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+   }
+}
+
+
+/* Шапка сайта */
+header {
+    flex: 0 0 auto;
+}
+
+
+/* Основное содержимое */
+main {
+    display: flex;
+    flex: 1 0 auto;
+}
+main > div.container {
+    flex: 1 0 auto;
+}
+section {
+
+}
+aside {
+
+}
+
+
+/* Подвал сайта */
+footer {
     flex: 0 0 auto;
 }
