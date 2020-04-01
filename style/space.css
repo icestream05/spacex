@@ -3,7 +3,6 @@
 @import url("https://marksheet.io/css/reset.css");
 
 
-
 /* Базовые стили */
 html {
     height: 100%;
@@ -12,64 +11,56 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    line-height: 20px;
+    font-family: "Verdana", sans-serif;
 }
 .container {
     display: flex;
     width: 100%;
     max-width: 1200px; /*максимальная ширина может иметь другое значение*/
-    padding: 0 15px;
-    margin: 0 auto;
+    padding: 0;
+/*    margin: 0 auto;*/
+    margin-bottom: 80px;
 }
-
-
-/* Предустановки */
-.row {
-    display: flex;
-    flex-direction: row;
+.button {
+    width: 195px;
+    padding: 0 25px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 50px;
+    text-decoration: none;
+    background-color: #feca30;
+    color: black;
 }
-.column {
-    display: flex;
-    flex-direction: column;
+.button:hover {
+    background-color: white;
 }
-nav ul {
+h1 {
+/*
     margin: 0;
     padding: 0;
-    list-style: none;/* Импорт стилей, шрифтов и иконок */
-/* Сброс CSS */
-@import url("https://marksheet.io/css/reset.css");
-
-
-
-/* Базовые стили */
-html {
-    height: 100%;
+*/
+    font-size: 45px;
+    line-height: 50px;
+    font-family: "Courier New", monospace;
+    color: white;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-.container {
-    display: flex;
-    width: 100%;
-    max-width: 1200px; /*максимальная ширина может иметь другое значение*/
-    padding: 0 15px;
-    margin: 0 auto;
+p {
+    line-height: 22px;
+    color: #d4d4d4;
+    font-size: 14px;
 }
 
 
 /* Предустановки */
 .row {
     display: flex;
-    flex-direction: row;
+    flex-direction: none;
+    font-size: 14px;
 }
 .column {
     display: flex;
     flex-direction: column;
-}
-.nav {
-    display: flex;
-    margin-bottom: 95px;
 }
 nav ul {
     margin: 0;
@@ -82,6 +73,40 @@ nav ul {
 img {
     width: 100%;
     max-width: 100%;
+}
+.mail {
+    background-image: url(hohlova/images/mail-icon.png);
+    position: center center;
+    width: 17px;
+    height: 12px;
+}
+.phone {
+    background-image: url(hohlova/images/phone-icon.png);
+    position: center center;
+    width: 17px;
+    height: 17px;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+}
+.rocket {
+    background-image: url(hohlova/images/moon-rocket.png);
+    position: center center;
+    width: 338px;
+    height: 338px;
+}
+.arrow {
+    background-image: url(hohlova/images/right-arrow-dark.png);
+    position: fixed;
+    width: 19px;
+    height: 16px;
+}
+.advantage {
+    background-image: url(hohlova/images/advantage-ico n-1.png);
+    position: fixed;
+    width: 60px;
+    height: 68px;
 }
 .col-1 {
     flex: 1;
@@ -104,77 +129,29 @@ img {
 @media (max-width: 800px) {
     .container {
         flex-direction: column;
-   }
+    }
 }
 
 
 /* Шапка сайта */
 header {
     flex: 0 0 auto;
+/*    height: 100px;*/
+    background: #222222;
+/*
+    background-position: 520px 130px;
+    min-height: 400px;
+*/
+    padding: 50px;
+/*    padding-bottom: 180px;*/
 }
-.contacts-menu .icon-mail {
-    background-image: url(spacex/images/mail-icon.png);
-    background-position: right right;
+header > div.container {
+    height: 100%;
+    align-items: center;
 }
-.contacts-menu .icon-phone {
-    background-image: url(spacex/images/phone-icon.png);
-    background-position: right right;
-}
-
-/* Основное содержимое */
-main {
-    display: flex;
-    flex: 1 0 auto;
-}
-main > div.container {
-    flex: 1 0 auto;
-}
-section {
-
-}
-aside {
-
-}
-
-
-/* Подвал сайта */
-footer {
-    flex: 0 0 auto;
-}
-
-}
-
-
-/* Гибкая верстка */
-img {
-    width: 100%;
-    max-width: 100%;
-}
-.col-1 {
-    flex: 1;
-}
-.col-2 {
-    flex: 2;
-}
-.col-3 {
-    flex: 3;
-}
-.col-4 {
-    flex: 4;
-}
-.col-5 {
-    flex: 5;
-}
-@media (max-width: 800px) {
-    .container {
-        flex-direction: column;
-   }
-}
-
-
-/* Шапка сайта */
-header {
-    flex: 0 0 auto;
+header ul li {
+    margin-right: 20px;
+    color: #d4d4d4;
 }
 
 
@@ -182,20 +159,72 @@ header {
 main {
     display: flex;
     flex: 1 0 auto;
-}
-main > div.container {
-    flex: 1 0 auto;
+    height: 200px;
 }
 section {
-
+    flex: 3 0 auto; /* 3 - это ширина столбца */
+    padding: 0 15px;
+    font-family: monospace;
+}
+.moon {
+    font-family: monospace;
+    background-color: #222222;
+    height: 100%;
+}
+.advantages {
+    font-family: monospace;
+    padding: 85px 0;
+    background-color: #131313;
+    color: #ffffff;
+}
+advantages ul li {
+    width: 180px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #d4d4d4;
 }
 aside {
-
+    flex: 1 0 auto; /* 1 - это ширина столбца */
+    padding: 0 15px;
+    background: #f0f0f0;
+    padding: 10px;
+    width: 200px;
+    float: right;
+    font-family: cursive;
+}
+aside a {
+    color: black;
+    text-decoration: none;
+}
+aside a:hover {
+    text-decoration: underline;
+}
+aside li {
+    line-height: 1.5em;
 }
 
 
 /* Подвал сайта */
 footer {
     flex: 0 0 auto;
+    background-color: #151418;
+    color: #fff;
 }
-1
+footer > div.container {
+    height: 100%;
+    padding: 10px 0;
+}
+footer nav ul {
+    margin-right: 30px;
+}
+footer li {
+    line-height: 2em;
+}
+
+
+header a,
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
