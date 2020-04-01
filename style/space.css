@@ -75,13 +75,13 @@ img {
     max-width: 100%;
 }
 .mail {
-    background-image: url(hohlova/images/mail-icon.png);
+    background-image: url(spacex/images/mail-icon.png);
     position: center center;
     width: 17px;
     height: 12px;
 }
 .phone {
-    background-image: url(hohlova/images/phone-icon.png);
+    background-image: url(spacex/images/phone-icon.png);
     position: center center;
     width: 17px;
     height: 17px;
@@ -91,19 +91,19 @@ img {
     height: 60px;
 }
 .rocket {
-    background-image: url(hohlova/images/moon-rocket.png);
+    background-image: url(spacex/images/moon-rocket.png);
     position: center center;
     width: 338px;
     height: 338px;
 }
 .arrow {
-    background-image: url(hohlova/images/right-arrow-dark.png);
+    background-image: url(spacex/images/right-arrow-dark.png);
     position: fixed;
     width: 19px;
     height: 16px;
 }
 .advantage {
-    background-image: url(hohlova/images/advantage-ico n-1.png);
+    background-image: url(spacex/images/advantage-ico n-1.png);
     position: fixed;
     width: 60px;
     height: 68px;
